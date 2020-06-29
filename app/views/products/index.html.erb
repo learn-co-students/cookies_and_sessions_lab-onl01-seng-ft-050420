@@ -3,9 +3,9 @@
   <%= submit_tag('add to cart') %>
 <% end %>
 
-<% if !@cart.nil? %>
+<% if !cart.nil? %>
   <ul>
-    <% @cart.each do |product| %>
+    <% cart.each do |product| %>
       <li><%= product %></li>
     <% end %>
   </ul> 
