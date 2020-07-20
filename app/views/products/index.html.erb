@@ -1,0 +1,13 @@
+<h1>Products#index</h1>
+
+<%= form_tag('/products/add', :method => :get) do %>
+<%= text_field_tag "product" %>
+<%= submit_tag "add to cart" %>
+<% end %>
+
+<%= session[:cart]%>
+
+
+
+
+
