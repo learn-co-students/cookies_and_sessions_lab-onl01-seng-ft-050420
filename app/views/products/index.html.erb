@@ -1,0 +1,12 @@
+<%= form_for(@cart)  do |f| %>
+  <%= f.label :product %>
+  <%= f.text_field :product %>
+  <br/>
+ <%= f.submit%>
+<% end %>
+
+<%= @cart.each do |p|%>
+
+<%=p%>
+
+<%end%>
