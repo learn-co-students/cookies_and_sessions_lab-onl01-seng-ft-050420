@@ -4,8 +4,6 @@ class ProductsController < ApplicationController
     end
 
     def add
-        byebug
-
     end
 
 end
