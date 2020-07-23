@@ -1,11 +1,9 @@
-<%= form_for(@cart)  do |f| %>
-  <%= f.label :product %>
-  <%= f.text_field :product %>
-  <br/>
- <%= f.submit%>
-<% end %>
+<%= form_tag('/products/add', method: :post, action: :add)do %>
+ <input name='product'>
+<input type='submit' value='add to cart'>
+<%end%>
 
-<%= @cart.each do |p|%>
+<%= cart.each do |p|%>
 
 <%=p%>
 
